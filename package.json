@@ -2,7 +2,15 @@
   "name": "foobar-app",
   "version": "0.1.0",
   "scripts": {
-    "postinstall": "npm install --prefix library-frontend && npm install --prefix library-backend && npm run build",
-	"build": "webpack --mode production --scripts-prepend-node-path=auto --prefix library-backend"
+	"postinstall": "run-p install:backend install:frontend",
+	"install:backend": "cd library-backend && npm install",
+	"install:frontend": "cd library-frontend && npm install",
+  
+	"start": "cd library-backend && npm run start",
+
+    "build": "cd library-frontend && npm run build"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.0.2"
   }
 }
