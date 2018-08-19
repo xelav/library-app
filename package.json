@@ -1,10 +1,10 @@
 {
-  "name": "foobar-app",
-  "version": "0.1.0",
+  "name": "library-app",
+  "version": "1.0.0",
   "scripts": {
 	"postinstall": "run-p install:backend install:frontend",
 	"install:backend": "cd library-backend && npm install",
-	"install:frontend": "cd library-frontend && npm install --dev",
+	"install:frontend": "cd library-frontend && npm install --dev && npm run build",
   
 	"start": "cd library-backend && npm run start",
 
