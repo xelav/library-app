@@ -2,6 +2,7 @@
   "name": "foobar-app",
   "version": "0.1.0",
   "scripts": {
-    "postinstall": "npm install --prefix library-frontend && npm install --prefix library-backend && npm run build --scripts-prepend-node-path=auto --prefix library-backend"
+    "postinstall": "npm install --prefix library-frontend && npm install --prefix library-backend && npm run build"
+	"build": "webpack --mode production --scripts-prepend-node-path=auto --prefix library-backend""
   }
 }
