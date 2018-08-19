@@ -23,10 +23,7 @@ app.get('/api/books/:bookId(\\d+)', (req, res) => {
             .send('Book not found!');
     }
 });
-app.get('/', (req, res)=> {
-    res.redirect('/home')
-});
-app.get('/home', (req, res)=> {
+app.get('/home', (req, res) => {
     res.sendFile('/dist/index.html', {root: __dirname })
 });
 
