@@ -4,7 +4,7 @@
   "scripts": {
 	"postinstall": "run-p install:backend install:frontend",
 	"install:backend": "cd library-backend && npm install",
-	"install:frontend": "cd library-frontend && npm install",
+	"install:frontend": "cd library-frontend && npm install --dev",
   
 	"start": "cd library-backend && npm run start",
 
