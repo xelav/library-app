@@ -2,11 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const fs = require("fs");
+var path = require('path');
 
 const contents = fs.readFileSync("data.json");
 const jsonContent = JSON.parse(contents);
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(express.static('dist'));
@@ -22,8 +23,11 @@ app.get('/api/books/:bookId(\\d+)', (req, res) => {
             .send('Book not found!');
     }
 });
+app.get('/', (req, res)=> {
+    res.redirect('/home')
+});
 app.get('/home', (req, res)=> {
-    res.sendFile('dist/index.html', {root: __dirname })
+    res.sendFile('/dist/index.html', {root: __dirname })
 });
 
 app.listen(port, function() {
