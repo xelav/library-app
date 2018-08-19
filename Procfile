@@ -1,1 +1,1 @@
-web: npm start --prefix library-backend
+web: npm build && npm start
