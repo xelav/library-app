@@ -6,6 +6,8 @@ const fs = require("fs");
 const contents = fs.readFileSync("data.json");
 const jsonContent = JSON.parse(contents);
 
+var port = process.env.PORT || 8080;
+
 app.use(cors());
 app.use(express.static('dist'));
 
@@ -24,4 +26,6 @@ app.get('/home', (req, res)=> {
     res.sendFile('dist/index.html', {root: __dirname })
 });
 
-app.listen(4000, () => console.log('Example app listening on port 4000!'));
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
