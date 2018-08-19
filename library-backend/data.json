@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Book one",
+    "description": "Оч крутая книга, да",
+    "author": "",
+    "date_published": "1990-01-01"
+  },
+  {
+    "id": 2,
+    "name": "Book two",
+    "description": "Прям вообще",
+    "author": "",
+    "date_published": "1990-01-01"
+  },
+  {
+    "id": 3,
+    "name": "Book four",
+    "description": "Эта не оч",
+    "author": "",
+    "date_published": "1990-01-01"
+  }
+]

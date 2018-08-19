@@ -1,0 +1,27 @@
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const fs = require("fs");
+
+const contents = fs.readFileSync("data.json");
+const jsonContent = JSON.parse(contents);
+
+app.use(cors());
+app.use(express.static('dist'));
+
+app.get('/api/books', (req, res) => res.send(jsonContent));
+app.get('/api/books/:bookId(\\d+)', (req, res) => {
+    let id = Number(req.params.bookId);
+    foundObject = jsonContent.find(o => o.id === id);
+    if (foundObject !== undefined) {
+        res.send(foundObject);
+    } else {
+        res.status(404)
+            .send('Book not found!');
+    }
+});
+app.get('/home', (req, res)=> {
+    res.sendFile('dist/index.html', {root: __dirname })
+});
+
+app.listen(4000, () => console.log('Example app listening on port 4000!'));
