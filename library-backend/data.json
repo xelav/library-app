@@ -1,23 +1,51 @@
 [
   {
     "id": 1,
-    "name": "Book one",
-    "description": "Оч крутая книга, да",
-    "author": "",
-    "date_published": "1990-01-01"
+    "name": "Luba mirabilis urbs estа",
+    "description": "Eleatess sunt lixas de talis detrius. Detriuss crescere, tanquam noster exsul.",
+    "author": "author1",
+    "date_published": "1950-01-01"
   },
   {
     "id": 2,
-    "name": "Book two",
-    "description": "Прям вообще",
-    "author": "",
-    "date_published": "1990-01-01"
+    "name": "Be closest.",
+    "description": "Be pictorialе. One must hear the spirit in order to believe the source of parallel conclusion.",
+    "author": "author2",
+    "date_published": "1950-01-02"
   },
   {
     "id": 3,
-    "name": "Book four",
-    "description": "Эта не оч",
-    "author": "",
-    "date_published": "1990-01-01"
+    "name": "With turkey drink anchovy essence. ",
+    "description": "With chicken lards drink whipped cream. Remember: fluffed raspberries taste best when boiled in a frying pan seasoned with mustard.",
+    "author": "author3",
+    "date_published": "1950-01-03"
+  },
+  {
+    "id": 4,
+    "name": "Bung holes rise with treasure!",
+    "description": "Never fear a parrot. How coal-black. You fire like a fish.",
+    "author": "author4",
+    "date_published": "1950-01-04"
+  },
+  {
+    "id": 5,
+    "name": "Stars tremble with hypnosis!",
+    "description": "Ellipse, metamorphosis, and shield. Yell surprisingly like a quirky mermaid.",
+    "author": "author5",
+    "date_published": "1950-01-05"
+  },
+  {
+    "id": 6,
+    "name": "Yellow fever, life, and amnesty.",
+    "description": "Horror, booty, and faith. Stormy graces lead to the urchin.",
+    "author": "author6",
+    "date_published": "1950-01-06"
+  },
+  {
+    "id": 7,
+    "name": "Why does the astronaut walk.",
+    "description": "This coordinates has only been imitated by a neutral collective. The ferengi is nosily sub-light.",
+    "author": "author7",
+    "date_published": "1950-01-07"
   }
 ]
