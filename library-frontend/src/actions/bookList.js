@@ -1,7 +1,7 @@
-import {FETCH_BOOK_LIST_SUCCESS} from '../constants/action-types'
-import axios from 'axios';
-import {fetchBegin, fetchError, handleError} from './index'
-import {config} from "../common/config/index"
+import { FETCH_BOOK_LIST_SUCCESS } from "../constants/action-types";
+import axios from "axios";
+import { fetchBegin, fetchError, handleError } from "./index";
+import { config } from "../common/config/index";
 
 export const fetchBookListSuccess = bookList => ({
     type: FETCH_BOOK_LIST_SUCCESS,
@@ -20,5 +20,5 @@ export function getBookList() { return dispatch => {
                     dispatch(fetchError(error));
                     dispatch(handleError(error));
                 })
-        , config.apiDelay)
-}}
+        , config.apiDelay);
+};}

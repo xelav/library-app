@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import {setBook} from '../actions/bookDetail'
-import {connect} from 'react-redux'
-import PropTypes from 'prop-types'
-import {getBookList} from "../actions/bookList";
+import React, { Component } from "react";
+import { setBook } from "../actions/bookDetail";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import { getBookList } from "../actions/bookList";
 
 class BookDetail extends Component {
 
@@ -33,4 +33,4 @@ const mapStateToProps = (state) => ({
 });
 
 
-export default connect(mapStateToProps, {getBookList, setBook})(BookDetail);
+export default connect(mapStateToProps, { getBookList, setBook })(BookDetail);

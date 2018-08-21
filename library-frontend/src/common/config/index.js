@@ -1,4 +1,4 @@
 export const config = {
-    apiUrl: `/api`,
+    apiUrl: "/api",
     apiDelay: 300
 };

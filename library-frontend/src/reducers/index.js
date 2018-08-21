@@ -4,7 +4,7 @@ import {
     FETCH_BOOK_SUCCESS,
     FETCH_FAILURE,
     SET_BOOK
-} from '../constants/action-types';
+} from "../constants/action-types";
 
 const initialState = {
     bookList: [],
@@ -14,7 +14,6 @@ const initialState = {
 };
 
 const bookReducer = (state = initialState, action) => {
-    console.log(`Action "${action.type}" dispatched!`, {action});
     switch (action.type) {
         case FETCH_BEGIN:
             return {

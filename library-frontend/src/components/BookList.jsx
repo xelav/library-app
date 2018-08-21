@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import {getBookList} from '../actions/bookList';
-import {setBook} from "../actions/bookDetail";
-import {connect} from 'react-redux';
-import PropTypes from 'prop-types';
-import {ListGroup, ListGroupItem} from 'react-bootstrap/lib'
+import React, { Component } from "react";
+import { getBookList } from "../actions/bookList";
+import { setBook } from "../actions/bookDetail";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import { ListGroup, ListGroupItem } from "react-bootstrap/lib";
 
 class BookList extends Component {
 
@@ -17,7 +17,7 @@ class BookList extends Component {
     }
 
     handleSubmit(book) {
-        this.props.setBook(book)
+        this.props.setBook(book);
     }
 
     render() {
@@ -38,4 +38,4 @@ const mapStateToProps = (state) => ({
 });
 
 
-export default connect(mapStateToProps, {getBookList, setBook})(BookList);
+export default connect(mapStateToProps, { getBookList, setBook })(BookList);

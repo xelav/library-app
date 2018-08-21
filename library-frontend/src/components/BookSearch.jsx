@@ -14,7 +14,7 @@ class BookSearch extends Component {
         };
     }
 
-    handleinputChange(event) {
+    handleInputChange(event) {
         const {value} = event.target;
         this.setState({
             inputId: value,
@@ -37,7 +37,7 @@ class BookSearch extends Component {
                     <FormControl
                         type="text"
                         placeholder=""
-                        onChange={(e) => this.handleinputChange(e)}
+                        onChange={(e) => this.handleInputChange(e)}
                         value={this.state.inputId}
                     />
                     <Button

@@ -1,6 +1,6 @@
-import React, {Component} from "react";
-import {Slot} from 'react-page-layout'
-import {Col, Grid, Navbar, Row} from 'react-bootstrap/lib'
+import React, { Component } from "react";
+import { Slot } from "react-page-layout";
+import { Grid, Navbar, Row } from "react-bootstrap/lib";
 
 export class MainLayout extends Component {
     render() {
@@ -13,14 +13,9 @@ export class MainLayout extends Component {
                         </Navbar.Brand>
                     </Navbar.Header>
                 </Navbar>;
-                <Grid style={{marginBottom: '60px'}}>
+                <Grid style={{ marginBottom: "60px" }}>
                     <Row>
-                        <Col>
-                            <Row>
-                                <Slot name="content" />
-                            </Row>
-
-                        </Col>
+                        <Slot name="content" />
                     </Row>
                 </Grid>
                 <footer className="navbar navbar-fixed-bottom" style={{
