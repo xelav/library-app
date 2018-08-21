@@ -31,9 +31,7 @@ class HomePage extends Component {
 
                     <span className="spinner" style={{ opacity: this.props.loading ? 1 : 0 }}><i
                         className="fa fa-spinner fa-spin"
-                        style={{
-                            fontSize: "36px",
-                        }}
+                        style={{ fontSize: "36px", }}
                     /></span>
 
                     <Col md={4}>

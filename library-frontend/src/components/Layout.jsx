@@ -13,16 +13,12 @@ export class MainLayout extends Component {
                         </Navbar.Brand>
                     </Navbar.Header>
                 </Navbar>;
-                <Grid style={{ marginBottom: "60px" }}>
+                <Grid id="main-grid">
                     <Row>
                         <Slot name="content" />
                     </Row>
                 </Grid>
-                <footer className="navbar navbar-fixed-bottom" style={{
-                    backgroundColor: "#F0F0F0",
-                    height: "60px",
-                    lineHeight: "60px"
-                }}>
+                <footer id="footer" className="navbar navbar-fixed-bottom">
                     <div className="container text-center align-middle ">
                         <span className="text-muted align-middle">Copyright © 2007 All bears reserved.</span>
                     </div>
