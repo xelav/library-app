@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import HomePage from "./components/Page";
 import { MainLayout } from "./components/Layout";
-import { HashRouter } from "react-router-dom";
 import { LayoutProvider } from "react-page-layout";
 import store from "./store/index";
 import { Provider } from "react-redux";
@@ -15,11 +14,7 @@ class App extends Component {
     return (
         <Provider store={store}>
             <LayoutProvider layouts={layouts}>
-                <HashRouter>
-                    <div className="main">
-                        <HomePage />
-                    </div>
-                </HashRouter>
+                <HomePage />
             </LayoutProvider>
         </Provider>
     );
