@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import {getBookDetail} from '../actions/bookDetail'
-import { connect } from 'react-redux'
-import {FormControl, ControlLabel, Button, Form, HelpBlock, FormGroup} from "react-bootstrap/lib"
+import React, { Component } from "react";
+import { getBookDetail } from "../actions/bookDetail";
+import { connect } from "react-redux";
+import { FormControl, ControlLabel, Button, Form, HelpBlock, FormGroup } from "react-bootstrap/lib";
 
 class BookSearch extends Component {
 
@@ -9,21 +9,21 @@ class BookSearch extends Component {
         super(props);
 
         this.state = {
-            inputId: '',
+            inputId: "",
             validationState: true
         };
     }
 
     handleInputChange(event) {
-        const {value} = event.target;
+        const { value } = event.target;
         this.setState({
             inputId: value,
             validationState: isFinite(value)
-        })
+        });
     }
     handleSubmit() {
         this.setState({
-            inputId: '',
+            inputId: "",
             validationState: true
         });
         this.props.getBookDetail(this.state.inputId);
@@ -56,4 +56,4 @@ class BookSearch extends Component {
 }
 
 
-export default connect(null, {getBookDetail})(BookSearch);
+export default connect(null, { getBookDetail })(BookSearch);
