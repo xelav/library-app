@@ -4,7 +4,6 @@ import { Provider } from "react-redux";
 
 import HomePage from "./components/Page";
 import { MainLayout } from "./components/Layout";
-import store from "./store/index";
 
 
 const layouts = {
@@ -14,7 +13,7 @@ const layouts = {
 class App extends Component {
   render() {
     return (
-        <Provider store={store}>
+        <Provider store={ this.props.store }>
             <LayoutProvider layouts={layouts}>
                 <HomePage />
             </LayoutProvider>
