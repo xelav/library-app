@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { setBook } from "../actions/bookDetail";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+
+import { setBook } from "../actions/bookDetail";
 import { getBookList } from "../actions/bookList";
 
 class BookDetail extends Component {

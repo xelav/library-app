@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { getBookDetail } from "../actions/bookDetail";
 import { connect } from "react-redux";
 import { FormControl, ControlLabel, Button, Form, HelpBlock, FormGroup } from "react-bootstrap/lib";
+
+import { getBookDetail } from "../actions/bookDetail";
 
 class BookSearch extends Component {
 

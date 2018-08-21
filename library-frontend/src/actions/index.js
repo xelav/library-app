@@ -1,5 +1,6 @@
-import { FETCH_BEGIN, FETCH_FAILURE, } from "../constants/action-types";
 import { error, success } from "react-notification-system-redux";
+
+import { FETCH_BEGIN, FETCH_FAILURE, } from "../constants/action-types";
 
 
 export const fetchBegin = () => ({

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { getBookList } from "../actions/bookList";
-import { setBook } from "../actions/bookDetail";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { ListGroup, ListGroupItem } from "react-bootstrap/lib";
+
+import { setBook } from "../actions/bookDetail";
+import { getBookList } from "../actions/bookList";
 
 class BookList extends Component {
 

@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { Page, Section } from "react-page-layout";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import { Col, Row } from "react-bootstrap/lib";
+import Notifications from "react-notification-system-redux";
+
+import { getBookDetail } from "../actions/bookDetail";
+
 import BookList from "./BookList";
 import BookDetail from "./BookDetail";
 import BookSearch from "./BookSearch";
-import PropTypes from "prop-types";
-import { getBookDetail } from "../actions/bookDetail";
-import { Col, Row } from "react-bootstrap/lib";
-import Notifications from "react-notification-system-redux";
 
 
 class HomePage extends Component {

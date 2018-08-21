@@ -1,7 +1,10 @@
-import { FETCH_BOOK_LIST_SUCCESS } from "../constants/action-types";
 import axios from "axios";
-import { fetchBegin, fetchError, handleError } from "./index";
+
+import { FETCH_BOOK_LIST_SUCCESS } from "../constants/action-types";
 import { config } from "../common/config/index";
+
+import { fetchBegin, fetchError, handleError } from "./index";
+
 
 export const fetchBookListSuccess = bookList => ({
     type: FETCH_BOOK_LIST_SUCCESS,

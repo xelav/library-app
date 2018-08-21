@@ -19,6 +19,9 @@
         "yoda": ["error", "never"],
         "object-curly-spacing": ["warn", "always"],
         "no-unused-vars": "warn",
+
+        "import/order": ["error", {"newlines-between": "always"}],
+
         "babel/generator-star-spacing": "warn",
         "babel/new-cap": "warn",
         "babel/object-shorthand": "warn",

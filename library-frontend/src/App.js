@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import { LayoutProvider } from "react-page-layout";
+import { Provider } from "react-redux";
+
 import HomePage from "./components/Page";
 import { MainLayout } from "./components/Layout";
-import { LayoutProvider } from "react-page-layout";
 import store from "./store/index";
-import { Provider } from "react-redux";
+
 
 const layouts = {
     "main": MainLayout,
