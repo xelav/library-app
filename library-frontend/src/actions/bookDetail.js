@@ -1,7 +1,6 @@
 import axios from "axios/index";
 
 import { FETCH_BOOK_SUCCESS, SET_BOOK } from "../constants/action-types";
-import { config } from "../common/config/index";
 
 import { fetchBegin, fetchError, handleError, handleSuccess } from "./index";
 
@@ -15,10 +14,10 @@ export const setBook = book => ({
     payload: { book }
 });
 
-export function getBookDetail(id) { return dispatch => {
+export function getBookDetail(id) { return (dispatch, getState, { apiConfig }) => {
     dispatch(fetchBegin());
     setTimeout(() =>
-            axios.get(`${config.apiUrl}/Books/${id}`)
+            axios.get(`${apiConfig.url}/Books/${id}`)
                 .then(res => {
                     dispatch(fetchBookSuccess());
                     dispatch(setBook(res.data));
@@ -28,5 +27,5 @@ export function getBookDetail(id) { return dispatch => {
                     dispatch(fetchError(error));
                     dispatch(handleError(error));
                 })
-        , config.apiDelay);
+        , apiConfig.delay);
 };}
